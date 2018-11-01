@@ -117,3 +117,39 @@ html {
 .forgot-password:focus {
     color: rgb(12, 97, 33);
 }
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    align-content: center;
+    height: 700px;
+    width: 100%;
+}
+
+/* Set gray background color and 100% height */
+.row.centerRow{
+    margin: auto;
+}
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+  width:  100px;
+}
+
+.sidenav.left {
+    margin-left: 0px
+}
+
+.sidenav.right {
+    margin-right: 0px
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;} 
+}
