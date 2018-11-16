@@ -128,23 +128,23 @@ html {
 
 /* Set gray background color and 100% height */
 .row.centerRow{
-    margin: auto;
+   
+    display: inline;
+    align-content: center;
+    
 }
 
 .sidenav {
   padding-top: 20px;
   background-color: #f1f1f1;
   height: 100%;
-  width:  100px;
+  width:  900px;
+  
 }
 
-.sidenav.left {
-    margin-left: 0px
-}
 
-.sidenav.right {
-    margin-right: 0px
-}
+
+
 
 @media screen and (max-width: 767px) {
     .sidenav {
