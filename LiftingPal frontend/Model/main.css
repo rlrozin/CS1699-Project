@@ -120,6 +120,7 @@ html {
 
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
 .row.content {
     align-content: center;
     height: 700px;
@@ -127,19 +128,20 @@ html {
 }
 
 /* Set gray background color and 100% height */
-.row.centerRow{
-   
+
+.row.centerRow {
+
     display: inline;
     align-content: center;
-    
+
 }
 
 .sidenav {
-  padding-top: 20px;
-  background-color: #f1f1f1;
-  height: 100%;
-  width:  900px;
-  
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+    width: 900px;
+
 }
 
 
@@ -151,5 +153,119 @@ html {
         height: auto;
         padding: 15px;
     }
-    .row.content {height:auto;} 
+    .row.content {
+        height: auto;
+    }
+}
+
+.gender-form {
+    margin-left: 20
+}
+
+.button-wrapper {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.submit-button {
+    background-color: lightseagreen;
+    color: white;
+    padding: 15px 35px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.submit-button:hover {
+    background-color: aquamarine;
+}
+
+.submit-button:focus {
+    outline: none;
+}
+
+.submit-button:hover {
+    background-color: seagreen;
+}
+
+#calculation {
+    text-align: center;
+    line-height: 7em;
+}
+
+#calculation span {
+    background-color: beige;
+}
+
+#result {
+    background-color: beige;
+    border-radius: 25px;
+    padding: 2em 2em;
+}
+
+#equation-source {
+    display: none;
+    margin-bottom: .1em;
+}
+
+#eating-plans {
+    display: none;
+}
+
+
+
+.tdee-tabs {
+    border-bottom-style: ridge;
+    border-bottom-width: thin;
+    color: black;
+}
+
+.alert-dismissible {}
+
+.alert {
+    text-align: center;
+}
+
+#missingAlert {
+    display: none;
+}
+
+.eating-tab {
+    width: 33%;
+    text-align: center;
+}
+
+
+
+.nav-link {
+    color: steelblue;
+}
+
+
+
+.eating-splits-grid {
+    background-color: beige;
+    border-radius: 40px;
+    padding: 0 30px 0 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.describe-diet {
+    font-size: .6em;
 }
