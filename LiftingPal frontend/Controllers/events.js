@@ -1,15 +1,13 @@
-if (result.children.length === 0) {
-    result.style.padding = '0px';
-}
-let age = document.getElementById("user-age");
-let weight = document.getElementById("user-weight");
-let activity = document.getElementById("user-activity");
+if (result.children.length === 0) result.style.padding = '0px';
+var age = document.getElementById("user-age");
+var weight = document.getElementById("user-weight");
+var activity = document.getElementById("user-activity");
 
-let calculator = document.getElementById("submit-button");
-let sum = document.getElementById("result");
-let asterix = "*"
-let closeAlert = document.getElementById("alertButton");
-let height = document.getElementById("height");
+var calculator = document.getElementById("submit-button");
+var sum = document.getElementById("result");
+var asterix = "*"
+var closeAlert = document.getElementById("alertButton");
+var height = document.getElementById("height");
 
 //age.addEventListener("input", formula);
 //weight.addEventListener("input", formula);
@@ -18,15 +16,13 @@ calculator.addEventListener("click", formula);
 closeAlert.addEventListener("click", closeAlerts);
 
 
-let
-
 function formula() {
     handleExceptions()
-    let gender = document.getElementById("male-button").checked;
-    let ageParse = parseFloat(age.value) || 0;
-    let weightParse = parseFloat(weight.value) || 0;
-    let heightParse = parseFloat(height.value) || 0;
-    let total = (10 * (weightParse * 0.45359237) + 6.25 * heightParse - (5 * ageParse));
+    var gender = document.getElementById("male-button").checked;
+    var ageParse = parseFloat(age.value) || 0;
+    var weightParse = parseFloat(weight.value) || 0;
+    var heightParse = parseFloat(height.value) || 0;
+    var total = (10 * (weightParse * 0.45359237) + 6.25 * heightParse - (5 * ageParse));
     if (gender == true) {
         total = total + 5;
     } else {
@@ -47,10 +43,10 @@ function formula() {
 }
 
 function show_macros(calories, bodyweight) {
-    let remainingCalories = calories;
-    let cuttingProtein = document.getElementsByClassName("cutting-protein");
-    let mainProtein = document.getElementsByClassName("main-protein");
-    let bulkProtein = document.getElementsByClassName("bulk-protein");
+    var remainingCalories = calories;
+    var cuttingProtein = document.getElementsByClassName("cutting-protein");
+    var mainProtein = document.getElementsByClassName("main-protein");
+    var bulkProtein = document.getElementsByClassName("bulk-protein");
 
     for (i = 0; i < cuttingProtein.length; i++) {
         cuttingProtein[i].innerHTML = Math.round(bodyweight * 1.1);
@@ -134,10 +130,10 @@ function showLess() {
 }
 
 function handleExceptions() {
-    if (age.value == null || age.value == "" || isNaN(age.value)) {
+    if (age.value == null || age.value == "") {
         showLess();
         document.getElementById("missingAlert").style.display = "block";
-        document.getElementById("alertText").innerHTML = "You haven't entered a valid age!".italics();
+        document.getElementById("alertText").innerHTML = "You haven't entered an age!".italics();
         exit();
     } else {
         document.getElementById("missingAlert").style.display = "none";
@@ -147,8 +143,6 @@ function handleExceptions() {
         document.getElementById("missingAlert").style.display = "block";
         document.getElementById("alertText").innerHTML = "You haven't entered a weight!".italics();
         exit();
-    } else {
-        document.getElementById("missingAlert".style.display = "none");
     }
 }
 
