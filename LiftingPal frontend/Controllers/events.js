@@ -2,13 +2,15 @@ if (result.children.length === 0) result.style.padding = '0px';
 var age = document.getElementById("user-age");
 var weight = document.getElementById("user-weight");
 var activity = document.getElementById("user-activity");
-
 var calculator = document.getElementById("submit-button");
+var calculateMax = document.getElementById("max-submit-button");
 var sum = document.getElementById("result");
 var asterix = "*"
 var closeAlert = document.getElementById("alertButton");
 var height = document.getElementById("height");
 
+var liftedWeight = document.getElementById("user-lifted-weight");
+var reps = document.getElementById("user-repetitions");
 //age.addEventListener("input", formula);
 //weight.addEventListener("input", formula);
 
@@ -123,7 +125,7 @@ function showMore() {
     document.getElementById("eating-plans").style.display = "block";
 }
 
-function showLess() {
+function showLessMacros() {
     sum.style.display = "none";
     document.getElementById("equation-source").style.display = "none";
     document.getElementById("eating-plans").style.display = "none";
@@ -131,7 +133,7 @@ function showLess() {
 
 function handleExceptions() {
     if (age.value == null || age.value == "") {
-        showLess();
+        showLessMacros();
         document.getElementById("missingAlert").style.display = "block";
         document.getElementById("alertText").innerHTML = "You haven't entered an age!".italics();
         exit();
@@ -139,11 +141,12 @@ function handleExceptions() {
         document.getElementById("missingAlert").style.display = "none";
     }
     if (weight.value == null || weight.value == "") {
-        showLess();
+        showLessMacros();
         document.getElementById("missingAlert").style.display = "block";
         document.getElementById("alertText").innerHTML = "You haven't entered a weight!".italics();
         exit();
     }
+
 }
 
 function closeAlerts() {
