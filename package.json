@@ -1,0 +1,26 @@
+{
+  "name": "twitter_bot",
+  "version": "1.0.0",
+  "description": "Twitter bot for LiftingPal",
+  "main": "twitter_bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewlas55/1530-LiftingApp.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot"
+  ],
+  "author": "Andrew McLaren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewlas55/1530-LiftingApp/issues"
+  },
+  "homepage": "https://github.com/drewlas55/1530-LiftingApp#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}
