@@ -101,7 +101,7 @@ function show_macros(calories, bodyweight) {
     remainingCalories += 400;
     remainingCalories -= Math.round(bodyweight * .9 * 4);
     document.getElementById("bulkHighFat").innerHTML = Math.round(bodyweight * .4);
-    remainingCalories -= (bodyweight * .35 * 9);
+    remainingCalories -= (bodyweight * .4 * 9);
     document.getElementById("bulkLowCarb").innerHTML = Math.round(remainingCalories / 4);
 
     remainingCalories = calories;
@@ -115,7 +115,7 @@ function show_macros(calories, bodyweight) {
     remainingCalories += 400;
     remainingCalories -= Math.round(bodyweight * .9 * 4);
     document.getElementById("bulkLowFat").innerHTML = Math.round(bodyweight * .3);
-    remainingCalories -= (bodyweight * .35 * 9);
+    remainingCalories -= (bodyweight * .3 * 9);
     document.getElementById("bulkHighCarb").innerHTML = Math.round(remainingCalories / 4);
 }
 
