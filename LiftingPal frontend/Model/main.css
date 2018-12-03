@@ -252,20 +252,11 @@ html {
     border-width: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .describe-diet {
     font-size: .6em;
+}
+
+.dictionary {
+    margin-left: .5em;
+    margin-top: .5em;
 }

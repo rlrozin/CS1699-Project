@@ -25,16 +25,23 @@
                 <li class="nav-item">
                     <a class="nav-link" href="dashboard.html">Dashboard</a>
                 </li>
-                <li class="active nav-item">
-                    <a class="nav-link" href="questionnaire.html">Questionnaire</a>
+                <li class="nav-item nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="calculators.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Questionnaires
+                                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="questionnaire.html"> Pre-Block Questionnaire </a>
+                        <a class="dropdown-item" href="post-block questionnaire.html"> Post-Block Questionnaire </a>
+                    </div>
+
                 </li>
                 <li class="nav-item nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="calculators.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Calculators
                                 </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="tdee.html">TDEE Calculator</a>
                         <a class="dropdown-item" href="macros.html">Macronutrient Calculator</a>
+                        <a class="dropdown-item" href="ORM.html">One Rep Max Calculator</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -78,7 +85,7 @@
             </li>
 
             <li>
-                <h4> What is your desired program type? </h4>
+                <h4> What is your desired program type? (Only affects Advanced Lifters) </h4>
                 <input type="radio" name="ProgramType" value="ULSplit"> Upper/Lower Split<br>
                 <input type="radio" name="ProgramType" value="FullBody"> Full Body<br>
                 <input type="radio" name="ProgramType" value="Brosplit"> Brosplit (Not Recommended)<br>
@@ -86,7 +93,7 @@
             </li>
 
             <li>
-                <h4> What is your desired block length? </h4>
+                <h4> What is your desired block length? (Only affects Advanced Lifters) </h4>
                 <input type="radio" name="BlockLength" value="BlockLength"> 1 Week <br>
                 <input type="radio" name="BlockLength" value="BlockLength"> 2 Weeks <br>
                 <input type="radio" name="BlockLength" value="BlockLength"> 3 Weeks <br>
@@ -94,7 +101,7 @@
             </li>
 
             <li>
-                <h4> What Type Of Lifter Are You? </h4>
+                <h4> What Type Of Lifter Are You? (Only affects Advanced Lifters) </h4>
                 <input type="radio" name="LifterType" value="LifterType"> Raw <br>
                 <input type="radio" name="LifterType" value="LifterType"> Equipped <br>
             </li>
