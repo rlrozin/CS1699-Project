@@ -19,8 +19,7 @@ var params = {
 function gotData(err, data, response) {
 	var tweetids = data.statuses;
 	for(var i = 0; i < tweetids.length; i++){
-		console.log(tweetids[i].id);
-		list[i] = tweetids[i].id;
+		console.log(tweetids[i].text);
 	}
 }
 
