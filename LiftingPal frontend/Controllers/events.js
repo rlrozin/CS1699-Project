@@ -146,13 +146,13 @@ function handleExceptions() {
         document.getElementById("alertText").innerHTML = "You haven't entered a weight!".italics();
         exit();
     }
+}
 
+function showProgram() {
+    window.location.replace("program.html");
+    document.getElementById("program").style.display = "block";
 }
 
 function closeAlerts() {
     document.getElementById("missingAlert").style.display = "none";
-}
-
-function hidePreBlock() {
-    return false;
 }

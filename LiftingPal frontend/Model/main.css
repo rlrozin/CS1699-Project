@@ -212,7 +212,9 @@ html {
     display: none;
 }
 
-
+#program {
+    display: none;
+}
 
 .tdee-tabs {
     border-bottom-style: ridge;
