@@ -152,3 +152,7 @@ function handleExceptions() {
 function closeAlerts() {
     document.getElementById("missingAlert").style.display = "none";
 }
+
+function hidePreBlock() {
+    return false;
+}
