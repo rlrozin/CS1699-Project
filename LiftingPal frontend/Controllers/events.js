@@ -17,7 +17,6 @@ var reps = document.getElementById("user-repetitions");
 calculator.addEventListener("click", formula);
 closeAlert.addEventListener("click", closeAlerts);
 
-
 function formula() {
     handleExceptions()
     var gender = document.getElementById("male-button").checked;
@@ -146,11 +145,6 @@ function handleExceptions() {
         document.getElementById("alertText").innerHTML = "You haven't entered a weight!".italics();
         exit();
     }
-}
-
-function showProgram() {
-    window.location.replace("program.html");
-    document.getElementById("program").style.display = "block";
 }
 
 function closeAlerts() {
